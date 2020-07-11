@@ -8,6 +8,9 @@
         <a href="https://github.com/johnlawsharrison" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/johnlawsharrison" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
+      <a class="button" :href="`${publicPath}JohnLawsResume.pdf`" target="_blank">
+          Resume
+      </a>
     </div>
     <Projects/>
     <TickList/>
@@ -23,7 +26,12 @@ export default {
   components: {
     Projects,
     TickList
+  },
+  data () {
+  return {
+    publicPath: process.env.BASE_URL
   }
+}
 }
 </script>
 
@@ -53,7 +61,7 @@ h1, h2 {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 a:hover {
@@ -83,10 +91,16 @@ a:hover {
   opacity: 1;
   font-size: 48px;
   margin-right: 8px;
-  transition: opacity 1.0s ease;
 }
 
-.link-bar a:hover {
+a.button {
+  background-color: #B48;
+  color:white;
+  padding: 0.5rem;
+  opacity: 1;
+}
+
+.link-bar a:hover, a.button:hover {
   opacity: 0.5;
 }
 </style>

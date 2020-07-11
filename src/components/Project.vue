@@ -50,11 +50,15 @@ figure > figcaption {
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
 }
 
 figure > figcaption > h3 {
   padding: 0.5rem;
+}
+
+figure > figcaption > h3 > a {
+  transition: color 0.3s ease;
 }
 
 p {

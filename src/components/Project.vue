@@ -1,15 +1,15 @@
 <template>
   <div class="tile">
-    <figure>
-      <img class="project-img" :src="require(`@/assets/${project.img}`)" :alt="project.title">
-      <figcaption>
-        <h3>
-          <a :href="project.websiteUrl" target="_blank">
-            {{ project.title }}
-          </a>
-        </h3>
-      </figcaption>
-    </figure>
+    <a :href="project.websiteUrl" target="_blank">
+      <figure>
+        <img class="project-img" :src="require(`@/assets/${project.img}`)" :alt="project.title">
+        <figcaption>
+          <h3>
+              {{ project.title }}
+          </h3>
+        </figcaption>
+      </figure>
+    </a>
     <ul class="project-tags">
       <li v-for="tag in project.tags"
         :key="tag">
@@ -38,6 +38,8 @@ figure {
   margin: 0;
   overflow: hidden;
   position: relative;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 figure > img {
@@ -46,26 +48,22 @@ figure > img {
 }
 
 figure > figcaption {
-  color: white;
+  color: inherit;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-figure > figcaption > h3 {
+figure figcaption h3 {
   padding: 0.5rem;
-}
-
-figure > figcaption > h3 > a {
-  transition: color 0.3s ease;
 }
 
 p {
   padding: 1rem;
 }
 
-figcaption:hover {
+figure:hover {
   color: #B48;
 }
 

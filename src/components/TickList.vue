@@ -67,6 +67,10 @@ export default {
   align-items: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 h4 {
   margin: 0;
 }

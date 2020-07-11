@@ -61,7 +61,7 @@ h1, h2 {
 a {
   color: inherit;
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -85,6 +85,10 @@ a:hover {
 .banner h1, h2 {
   font-family: 'Nova Slim';
   font-weight: 400;
+}
+
+.banner a {
+  transition: opacity 0.3s ease;
 }
 
 .link-bar a {

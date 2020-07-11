@@ -42,6 +42,7 @@ figure {
 
 figure > img {
   width: 100%;
+  min-height: 220px;
 }
 
 figure > figcaption {

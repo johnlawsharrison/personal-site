@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "KEXP Digital Music Importer",
+    "tags": [
+      "Professional Contract",
+      "Angular",
+      "Django",
+      "TypeScript",
+      "Python",
+      "REST API",
+      "PostgreSQL",
+      "UX Design"
+    ],
+    "description": "",
+    "note": "The code for this project is private, GIFs demonstrating basic behavior provided with permission from KEXP",
+    "githubUrl": "",
+    "websiteUrl": "https://www.kexp.org/"
+  },
+  {
+    "id": 2,
+    "title": "DishSpinner",
+    "tags": [
+      "Android",
+      "Productivity"
+    ],
+    "description": "A simplified take on the classic 'chore wheel'. Use it with a group of roommates, your children, or coworkers to take turns performing a household task.",
+    "note": "In development",
+    "githubUrl": "https://github.com/johnlawsharrison/",
+    "websiteUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "Project Name",
+    "tags": [
+      "Angular",
+      "Demo"
+    ],
+    "description": "This project is still under development",
+    "note": "We'll see what it turns into",
+    "githubUrl": "https://github.com/johnlawsharrison",
+    "websiteUrl": ""
+  }
+]

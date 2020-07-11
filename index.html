@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>John Laws Harrison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- TODO: choose a different default font -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Slim&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31cb79a69a.js" crossorigin="anonymous"></script>
+    <!-- development -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  </head>
+  <body>
+    <div id="app">
+      <div class="banner">
+        <h1>John Laws Harrison</h1>
+        <h2>full-stack engineer</h2>
+        <div class="link-bar">
+          <a href="mailto:johnlawsharrison@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/johnlawsharrison" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/johnlawsharrison" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+      </div>
+      <div class="projects-section">
+        <div class="projects-grid">
+          <project v-for="project in projects"
+            :key="project.id"
+            :project="project">
+          </project>
+        </div>
+      </div>
+      <div class="mountain-project" v-if="showTicks">
+        <h2>
+            <i class="fas fa-mountain"></i>
+            Most recent routes climbed
+        </h2>
+        <h3>
+          data from
+          <a href="https://www.mountainproject.com/user/200538569/john-laws" target="_blank">
+            mountainproject.com
+          </a>
+        </h3>
+        <mp-tick v-for="tick in ticks"
+          :key="tick.id"
+          :tick="tick"
+          :route="routeData[tick.routeId]">
+        </mp-tick>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+/* General styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito, 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: #FA5;
+}
+
+/* FontAwesome icon globals */
+.fas, .fab {
+  color: #FA5;
+}
+
+/* Section styles */
+
+.banner {
+  padding: 25vh 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner h1, h2 {
+  font-family: 'Nova Slim';
+  font-weight: 400;
+}
+
+.link-bar a {
+  opacity: 1;
+  font-size: 48px;
+  margin-right: 8px;
+  transition: opacity 1.0s ease;
+}
+
+.link-bar a:hover {
+  opacity: 0.5;
+}
+
+/* Projects */
+
+.project-grid {
+  display: grid;
+}

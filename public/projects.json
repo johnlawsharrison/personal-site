@@ -7,10 +7,12 @@
       "Django",
       "PostgreSQL",
       "Audio",
-      "Proprietary"
+      "Proprietary",
+      "Contract Work",
+      "REST"
     ],
-    "description": "This is a long description about a longer project and its long about a lot of different things.",
-    "note": "The code for this project is private, GIFs demonstrating basic behavior provided with permission from KEXP",
+    "description": "A web application overhauling KEXP's audio ingest process. Allows DJs and programming staff to add new music to the station's library from anywhere, aggregating essential music metadata and preparing audio files for on-air broadcast within seconds. When you hear a newly released single on KEXP, chances are it went through this tool.",
+    "note": "The code for this project is proprietary, images demonstrating basic UX are provided with permission from KEXP",
     "githubUrl": "",
     "websiteUrl": "https://www.kexp.org/",
     "img": "kexp.gif"

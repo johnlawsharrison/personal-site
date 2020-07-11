@@ -44,7 +44,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  padding: 0 5vh;
 }
 
 h1, h2 {
@@ -58,12 +57,12 @@ a {
 }
 
 a:hover {
-  color: #FA5;
+  color: #B48;
 }
 
 /* FontAwesome icon globals */
 .fas, .fab {
-  color: #FA5;
+  color: #B48;
 }
 
 /* banner */

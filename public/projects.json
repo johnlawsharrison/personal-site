@@ -3,20 +3,15 @@
     "id": 1,
     "title": "KEXP Digital Music Importer",
     "tags": [
-      "Professional Contract",
       "Angular",
       "Django",
-      "TypeScript",
-      "Python",
-      "REST API",
-      "PostgreSQL",
-      "UX Design"
+      "PostgreSQL"
     ],
-    "description": "",
+    "description": "This is a long description about a longer project and its long about a lot of different things.",
     "note": "The code for this project is private, GIFs demonstrating basic behavior provided with permission from KEXP",
     "githubUrl": "",
     "websiteUrl": "https://www.kexp.org/",
-    "img": ""
+    "img": "kexp.gif"
   },
   {
     "id": 2,
@@ -29,7 +24,7 @@
     "note": "In development",
     "githubUrl": "https://github.com/johnlawsharrison/",
     "websiteUrl": "",
-    "img": ""
+    "img": "placeholder.png"
   },
   {
     "id": 3,
@@ -42,7 +37,7 @@
     "note": "We'll see what it turns into",
     "githubUrl": "https://github.com/johnlawsharrison",
     "websiteUrl": "",
-    "img": ""
+    "img": "placeholder.png"
   },
   {
     "id": 4,
@@ -56,6 +51,6 @@
     "note": "We'll see what it turns intosd,fbsdkfjndsfsdf",
     "githubUrl": "https://github.com/johnlawsharrison",
     "websiteUrl": "",
-    "img": ""
+    "img": "placeholder.png"
   }
 ]

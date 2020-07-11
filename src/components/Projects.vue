@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+.projects-section {
+  padding: 2rem;
+}
+
 .title {
   margin: 0 0 1rem 0;
 }
@@ -38,8 +42,8 @@ export default {
 /* Grid layout */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
 }
 
 </style>

@@ -1,20 +1,22 @@
 <template>
   <div class="tile">
-    <img class="project-img" src="@/assets/placeholder.png" :alt="project.title">
-    <div class="tile-content">
-      <h3>
-        <a :href="project.websiteUrl" target="_blank">
-          {{ project.title }}
-        </a>
-      </h3>
-      <ul class="project-tags">
-        <li v-for="tag in project.tags"
-          :key="tag">
-          {{ tag }}
-        </li>
-      </ul>
-      <p>{{ project.description }}</p>
-    </div>
+    <figure>
+      <img class="project-img" :src="require(`@/assets/${project.img}`)" :alt="project.title">
+      <figcaption>
+        <h3>
+          <a :href="project.websiteUrl" target="_blank">
+            {{ project.title }}
+          </a>
+        </h3>
+      </figcaption>
+    </figure>
+    <ul class="project-tags">
+      <li v-for="tag in project.tags"
+        :key="tag">
+        {{ tag }}
+      </li>
+    </ul>
+    <p>{{ project.description }}</p>
   </div>
 </template>
 
@@ -27,31 +29,54 @@ export default {
 
 <style scoped>
 .tile {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  background-color: #FA5;
+  background-color: #B48;
 }
 
-.project-img {
-  height: 150px;
-  margin-right: 1rem;
+.tile > figure {
+  max-height: 220px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tile > figure > img {
+  width: 100%;
+}
+
+.tile > figure > figcaption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+.tile > figure > figcaption > h3 {
+  padding: 0.5rem;
+}
+
+p {
+  padding: 1rem;
 }
 
 a:hover {
-  color: white;
+  color: #B48;
 }
 
 .project-tags {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0.5rem;
   list-style-type: none;
-  /* TODO: wrap tags */
 }
 
 .project-tags li {
-  margin-right: 1rem;
+  margin: 0.1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 </style>

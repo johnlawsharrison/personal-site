@@ -1,6 +1,6 @@
 <template>
   <div class="projects-section">
-    <h2>Projects</h2>
+    <h2 class="title">Projects</h2>
     <div class="projects-grid">
       <project v-for="project in projects"
         :key="project.id"
@@ -31,4 +31,15 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  margin: 0 0 1rem 0;
+}
+
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 1rem;
+}
+
 </style>

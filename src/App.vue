@@ -10,7 +10,7 @@
       </div>
     </div>
     <Projects/>
-    <TickList/>
+    <TickList v-if="false"/>
   </div>
 </template>
 
@@ -44,7 +44,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  padding: 0 5vh;
 }
 
 h1, h2 {
@@ -69,7 +69,7 @@ a:hover {
 /* banner */
 
 .banner {
-  padding: 25vh 0px 0px 0px;
+  padding: 20vh 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

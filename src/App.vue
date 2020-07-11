@@ -10,7 +10,7 @@
       </div>
     </div>
     <Projects/>
-    <TickList v-if="false"/>
+    <TickList/>
   </div>
 </template>
 
@@ -68,7 +68,7 @@ a:hover {
 /* banner */
 
 .banner {
-  padding: 20vh 0px 0px 0px;
+  padding: 10vh 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

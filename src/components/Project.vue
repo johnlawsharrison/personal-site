@@ -32,7 +32,7 @@ export default {
   background-color: #B48;
 }
 
-.tile > figure {
+figure {
   max-height: 220px;
   width: 100%;
   margin: 0;
@@ -40,11 +40,11 @@ export default {
   position: relative;
 }
 
-.tile > figure > img {
+figure > img {
   width: 100%;
 }
 
-.tile > figure > figcaption {
+figure > figcaption {
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -52,7 +52,7 @@ export default {
   width: 100%
 }
 
-.tile > figure > figcaption > h3 {
+figure > figcaption > h3 {
   padding: 0.5rem;
 }
 
@@ -60,7 +60,7 @@ p {
   padding: 1rem;
 }
 
-a:hover {
+figcaption:hover {
   color: #B48;
 }
 

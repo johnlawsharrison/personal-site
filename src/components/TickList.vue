@@ -1,19 +1,21 @@
 <template>
-  <div class="mountain-project" v-if="showTicks">
+  <div class="mountain-project-section" v-if="showTicks">
     <h2>
         <i class="fas fa-mountain"></i>
         Most recent routes climbed
     </h2>
-    <h3>
+    <h4>
       data from
       <a href="https://www.mountainproject.com/user/200538569/john-laws" target="_blank">
         mountainproject.com
       </a>
-    </h3>
-    <Tick v-for="tick in ticks"
-      :key="tick.id"
-      :tick="tick"
-      :route="routeData[tick.routeId]"/>
+    </h4>
+    <ul>
+      <Tick v-for="tick in ticks"
+        :key="tick.id"
+        :tick="tick"
+        :route="routeData[tick.routeId]"/>
+    </ul>
   </div>
 </template>
 
@@ -57,4 +59,16 @@ export default {
 }
 </script>
 <style scoped>
+.mountain-project-section {
+  /* TODO: refactor "sections" into one css rule */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  margin: 0;
+}
+
 </style>

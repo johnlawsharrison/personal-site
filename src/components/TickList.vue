@@ -1,7 +1,9 @@
 <template>
   <div class="mountain-project-section" v-if="showTicks">
+    <a href="https://www.mountainproject.com/user/200538569/john-laws" target="_blank">
+      <i class="fas fa-mountain"></i>
+    </a>
     <h2>
-        <i class="fas fa-mountain"></i>
         Most recent routes climbed
     </h2>
     <h4>
@@ -73,6 +75,11 @@ h2 {
 
 h4 {
   margin: 0;
+}
+
+.fa-mountain {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
 }
 
 </style>

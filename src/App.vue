@@ -61,16 +61,21 @@ h1, h2 {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 
 a:hover {
   color: #B48;
 }
 
-/* FontAwesome icon globals */
-.fas, .fab {
+/* FA icon/button globals */
+.fas, .fab, a.button {
   color: #B48;
+  transition: opacity 0.4s ease;
+}
+
+a > .fas:hover, a > .fab:hover, a.button:hover {
+  opacity: 0.5;
 }
 
 /* banner */
@@ -87,10 +92,6 @@ a:hover {
   font-weight: 400;
 }
 
-.banner a {
-  transition: opacity 0.3s ease;
-}
-
 .link-bar a {
   opacity: 1;
   font-size: 48px;
@@ -101,10 +102,5 @@ a.button {
   background-color: #B48;
   color:white;
   padding: 0.5rem;
-  opacity: 1;
-}
-
-.link-bar a:hover, a.button:hover {
-  opacity: 0.5;
 }
 </style>

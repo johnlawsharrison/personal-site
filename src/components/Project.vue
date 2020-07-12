@@ -29,7 +29,9 @@ export default {
 
 <style scoped>
 .tile {
-  background-color: #B48;
+  background: linear-gradient(#b48, #991149);
+  color: white;
+  /* background-color: #B48; */
 }
 
 figure {
@@ -49,7 +51,7 @@ figure > img {
 
 figure > figcaption {
   color: inherit;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -77,8 +79,8 @@ figure:hover {
 
 .project-tags li {
   margin: 0.1rem;
-  background-color: black;
-  color: white;
+  background-color:rgba(0, 0, 0, 0.6);
+  /* color: white; */
   border-radius: 0.5rem;
   padding: 0.5rem;
 }

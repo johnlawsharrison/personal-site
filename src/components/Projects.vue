@@ -1,12 +1,15 @@
 <template>
   <div class="projects-section">
     <h2 class="title">Projects</h2>
-    <div class="projects-grid">
-      <project v-for="project in projects"
-        :key="project.id"
-        :project="project">
-      </project>
-    </div>
+    <transition name="fade">
+      <div class="projects-grid" v-show="showProjects">
+        <project v-for="project in projects"
+          @project-img-loaded="onProjectImgLoaded"
+          :key="project.id"
+          :project="project">
+        </project>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -19,13 +22,26 @@ export default {
   name: 'Projects',
   data: function() {
     return {
-      projects: []
+      projects: [],
+      showProjects: false
     }
   },
   created () {
     fetch("projects.json")
       .then(response => response.json())
-      .then(json => this.projects = json)
+      .then(json => {
+        this.projects = json
+        // for project.img in projects
+        this.imgsToLoad = json.reduce(function(acc, currentProject) {
+          return acc.add(currentProject.img)
+        }, new Set())
+      })
+  },
+  methods: {
+    onProjectImgLoaded: function(imgName) {
+      this.imgsToLoad.delete(imgName);
+      this.showProjects = (this.imgsToLoad.size == 0)
+    }
   }
 }
 </script>
@@ -46,4 +62,16 @@ export default {
   gap: 1rem;
 }
 
+/* project list fade in */
+.fade-enter-active {
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-enter {
+  opacity: 0;
+}
 </style>

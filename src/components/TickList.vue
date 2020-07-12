@@ -8,7 +8,7 @@
     </h2>
     <h4>
       data from
-      <a href="https://www.mountainproject.com/user/200538569/john-laws" target="_blank">
+      <a href="https://www.mountainproject.com/data" target="_blank">
         mountainproject.com
       </a>
     </h4>

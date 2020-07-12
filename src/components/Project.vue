@@ -1,8 +1,9 @@
 <template>
-  <div class="tile">
+<transition name="fade">
+  <div class="tile" v-show="showProject">
     <a :href="project.websiteUrl" target="_blank">
       <figure>
-        <img class="project-img" :src="require(`@/assets/${project.img}`)" :alt="project.title">
+        <img class="project-img" v-on:load="onImgLoaded" :src="require(`@/assets/${project.img}`)" :alt="project.title">
         <figcaption>
           <h3>
               {{ project.title }}
@@ -18,12 +19,23 @@
     </ul>
     <p>{{ project.description }}</p>
   </div>
+</transition>
 </template>
 
 <script>
 export default {
   name: 'Project',
-  props: ['project']
+  props: ['project'],
+  data: function() {
+    return {
+      showProject: false
+    }
+  },
+  methods: {
+    onImgLoaded() {
+      this.showProject = true;
+    }
+  }
 }
 </script>
 
@@ -84,4 +96,18 @@ figure:hover {
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
+
+/* tile transition fading */
+.fade-enter-active {
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
 </style>

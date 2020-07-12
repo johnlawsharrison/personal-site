@@ -23,7 +23,8 @@ export default {
   data: function() {
     return {
       projects: [],
-      showProjects: false
+      showProjects: false,
+      imgsToLoad: new Set()
     }
   },
   created () {
@@ -32,9 +33,9 @@ export default {
       .then(json => {
         this.projects = json
         // for project.img in projects
-        this.imgsToLoad = json.reduce(function(acc, currentProject) {
+        json.reduce(function(acc, currentProject) {
           return acc.add(currentProject.img)
-        }, new Set())
+        }, this.imgsToLoad)
       })
   },
   methods: {

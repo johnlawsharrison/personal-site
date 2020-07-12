@@ -37,16 +37,15 @@ export default {
     }
   },
   created () {
-    // TODO: LOAD API KEY USING dotenv and set these urls as constants somewhere
-    const ticksUrl = `https://www.mountainproject.com/data/get-ticks?email=johnlawsharrison@gmail.com&key=${process.env.VUE_APP_MP_API_KEY}`
-    const routesUrl = `https://www.mountainproject.com/data/get-routes?key=${process.env.VUE_APP_MP_API_KEY}&routeIds=`
-    fetch(ticksUrl)
+    this.TICKS_URL = `https://www.mountainproject.com/data/get-ticks?email=johnlawsharrison@gmail.com&key=${process.env.VUE_APP_MP_API_KEY}`
+    this.ROUTES_URL = `https://www.mountainproject.com/data/get-routes?key=${process.env.VUE_APP_MP_API_KEY}&routeIds=`
+    fetch(this.TICKS_URL)
       .then(response => response.json())
       .then(json => json.ticks.slice(0, 5))
       .then(ticks => {
         var routeIds = ticks.map(a => a.routeId).join(',');
         this.ticks = ticks;
-        return fetch(routesUrl + routeIds)
+        return fetch(this.ROUTES_URL + routeIds)
       })
       .then(response => response.json())
       .then(json => {

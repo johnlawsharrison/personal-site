@@ -6,12 +6,13 @@
       "Angular",
       "Django",
       "PostgreSQL",
-      "Audio",
+      "Audio Processing",
       "Proprietary",
       "Contract Work",
-      "REST"
+      "REST",
+      "SOAP"
     ],
-    "description": "A web application overhauling KEXP's audio ingest process. Allows DJs and programming staff to add new music to the station's library from anywhere, aggregating essential music metadata and preparing audio files for on-air broadcast within seconds. When you hear a newly released single on KEXP, chances are it went through this tool.",
+    "description": "A web application overhauling KEXP's audio ingest process. Allows DJs and programming staff to add new music to the station's library from anywhere. Aggregates essential music metadata and prepares audio files for on-air broadcast within seconds. When you hear a new single debut on KEXP, chances are it went through this tool.",
     "note": "The code for this project is proprietary, images demonstrating basic UX are provided with permission from KEXP",
     "githubUrl": "",
     "websiteUrl": "https://www.kexp.org/",
@@ -32,16 +33,19 @@
   },
   {
     "id": 3,
-    "title": "Project Name",
+    "title": "KEXP Live Playlist",
     "tags": [
+      "Demo App",
+      "Material Design",
       "Angular",
-      "Demo"
+      "Django",
+      "PostgreSQL"
     ],
-    "description": "This project is still in development",
-    "note": "We'll see what it turns into",
-    "githubUrl": "https://github.com/johnlawsharrison",
-    "websiteUrl": "",
-    "img": "placeholder.png"
+    "description": "A clone of KEXP's real-time playlist. Uses the station's playlist API to display songs played in the last hour. Features a basic comment system, allowing DJs to update each track with links and additional context.",
+    "note": "",
+    "githubUrl": "https://github.com/johnlawsharrison/KEXPPlaylist",
+    "websiteUrl": "https://playlist.johnlawsharrison.com/",
+    "img": "playlist.png"
   },
   {
     "id": 4,

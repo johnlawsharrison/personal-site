@@ -2,7 +2,7 @@
   <div id="app">
     <div class="banner">
       <h1>John Laws Harrison</h1>
-      <h2>full-stack engineer</h2>
+      <h2>software engineer</h2>
       <div class="link-bar">
         <a href="mailto:johnlawsharrison@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/johnlawsharrison" target="_blank"><i class="fab fa-github"></i></a>

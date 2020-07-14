@@ -23,7 +23,8 @@
     "title": "DishSpinner",
     "tags": [
       "Android",
-      "Productivity"
+      "Productivity",
+      "In Development"
     ],
     "description": "A simplified take on the classic 'chore wheel'. Use it with a group of roommates, children, or co-workers to take turns performing a household task.",
     "note": "In development",
@@ -41,22 +42,21 @@
       "Django",
       "PostgreSQL"
     ],
-    "description": "A clone of KEXP's real-time playlist. Uses the station's playlist API to display songs played in the last hour. Features a basic comment system, allowing DJs to update each track with links and additional context.",
+    "description": "A clone of KEXP's real-time playlist. Uses the station's public API to display songs played in the last hour. Features a basic comment system, allowing DJs to update each track with links and additional context. Originally written as a demo app, I am currently working on making significant changes to securely deploy this demo in production.",
     "note": "",
     "githubUrl": "https://github.com/johnlawsharrison/KEXPPlaylist",
-    "websiteUrl": "https://playlist.johnlawsharrison.com/",
+    "websiteUrl": "https://github.com/johnlawsharrison/KEXPPlaylist",
     "img": "playlist.png"
   },
   {
     "id": 4,
     "title": "Project Name",
     "tags": [
-      "Angular",
       "Demo",
       "Tag"
     ],
     "description": "This project is still in development",
-    "note": "We'll see what it turns intosd,fbsdkfjndsfsdf",
+    "note": "We'll see what it turns into",
     "githubUrl": "https://github.com/johnlawsharrison",
     "websiteUrl": "",
     "img": "placeholder.png"

@@ -2,7 +2,18 @@
   <div class="tile">
     <a :href="project.websiteUrl" target="_blank">
       <figure>
-        <img class="project-img" v-on:load="onImgLoaded" :src="require(`@/assets/${project.img}`)" :alt="project.title">
+        <template v-if="project.img.split('.').pop() == 'mp4'">
+          <video
+            v-on:loadeddata="onImgLoaded"
+            autoplay
+            loop
+            muted
+            playsinline
+            :alt="project.title">
+            <source :src="require(`@/assets/${project.img}`)" type="video/mp4">
+          </video>
+        </template>
+        <img v-else class="project-img" v-on:load="onImgLoaded" :src="require(`@/assets/${project.img}`)" :alt="project.title">
         <figcaption>
           <h3>
               {{ project.title }}
@@ -27,7 +38,6 @@ export default {
   methods: {
     onImgLoaded() {
       this.$emit('project-img-loaded', this.project.img);
-      // this.showProject = true;
     }
   }
 }
@@ -50,9 +60,13 @@ figure {
   transition: color 0.3s ease;
 }
 
-figure > img {
+figure > img, figure > video {
   width: 100%;
   min-height: 220px;
+}
+
+figure > video {
+  object-fit: fill;
 }
 
 figure > figcaption {

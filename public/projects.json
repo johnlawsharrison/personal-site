@@ -42,7 +42,7 @@
       "Django",
       "PostgreSQL"
     ],
-    "description": "A clone of KEXP's real-time playlist. Uses the station's public API to display songs played in the last hour. Features a basic comment system, allowing DJs to update each track with links and additional context. Originally written as a demo app, I am currently working on making significant changes to securely deploy this demo in production.",
+    "description": "A clone of KEXP's real-time playlist. Uses the station's public API to display songs played in the last hour. Features a basic comment system, allowing DJs to update each track with links and additional context.",
     "note": "",
     "githubUrl": "https://github.com/johnlawsharrison/KEXPPlaylist",
     "websiteUrl": "http://playlist.johnlawsharrison.com",

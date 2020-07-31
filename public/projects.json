@@ -47,18 +47,5 @@
     "githubUrl": "https://github.com/johnlawsharrison/KEXPPlaylist",
     "websiteUrl": "http://playlist.johnlawsharrison.com",
     "img": "playlist.png"
-  },
-  {
-    "id": 4,
-    "title": "Project Name",
-    "tags": [
-      "Demo",
-      "Tag"
-    ],
-    "description": "This project is still in development",
-    "note": "We'll see what it turns into",
-    "githubUrl": "https://github.com/johnlawsharrison",
-    "websiteUrl": "",
-    "img": "placeholder.png"
   }
 ]

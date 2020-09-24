@@ -37,9 +37,8 @@ export default {
     }
   },
   created () {
-    // TODO: proxy these requests through my backend server to obscure the MP API key
-    this.TICKS_URL = `https://www.mountainproject.com/data/get-ticks?email=johnlawsharrison@gmail.com&key=${process.env.VUE_APP_MP_API_KEY}`
-    this.ROUTES_URL = `https://www.mountainproject.com/data/get-routes?key=${process.env.VUE_APP_MP_API_KEY}&routeIds=`
+    this.TICKS_URL = `https://us-west2-coastal-sanctum-290521.cloudfunctions.net/mountain-project-proxy`
+    this.ROUTES_URL = `https://us-west2-coastal-sanctum-290521.cloudfunctions.net/mountain-project-proxy?routeIds=`
     fetch(this.TICKS_URL)
       .then(response => response.json())
       .then(json => json.ticks.slice(0, 5))

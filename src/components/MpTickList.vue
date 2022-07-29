@@ -41,7 +41,7 @@ export default {
     this.ROUTES_URL = `https://us-west2-coastal-sanctum-290521.cloudfunctions.net/mountain-project-proxy?routeIds=`
     fetch(this.TICKS_URL)
       .then(response => response.json())
-      .then(json => json.ticks.slice(0, 5))
+      .then(json => json.ticks.slice(0, 10))
       .then(ticks => {
         var routeIds = ticks.map(a => a.routeId).join(',');
         this.ticks = ticks;

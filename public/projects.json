@@ -20,20 +20,6 @@
   },
   {
     "id": 2,
-    "title": "DishSpinner",
-    "tags": [
-      "Android",
-      "Productivity",
-      "In Development"
-    ],
-    "description": "A simplified take on the classic 'chore wheel'. Use it with a group of roommates, children, or co-workers to take turns performing a household task.",
-    "note": "In development",
-    "githubUrl": "https://github.com/johnlawsharrison/",
-    "websiteUrl": "",
-    "img": "dishspinner.jpg"
-  },
-  {
-    "id": 3,
     "title": "KEXP Live Playlist",
     "tags": [
       "Demo App",

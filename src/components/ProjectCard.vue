@@ -1,5 +1,5 @@
 <template>
-  <div class="tile">
+  <div class="card">
     <a :href="project.websiteUrl" target="_blank">
       <figure>
         <template v-if="project.img.split('.').pop() == 'mp4'">
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'Project',
+  name: 'ProjectCard',
   props: ['project'],
   methods: {
     onImgLoaded() {
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.tile {
+.card {
   background: linear-gradient(#b48, #991149);
   color: white;
   /* background-color: #B48; */

@@ -3,23 +3,23 @@
     <h2 class="title">Projects</h2>
     <transition name="fade">
       <div class="projects-grid" v-show="showProjects">
-        <project v-for="project in projects"
+        <ProjectCard v-for="project in projects"
           @project-img-loaded="onProjectImgLoaded"
           :key="project.id"
           :project="project">
-        </project>
+        </ProjectCard>
       </div>
     </transition>
   </div>
 </template>
 
 <script>
-import Project from './Project.vue'
+import ProjectCard from './ProjectCard.vue'
 export default {
   components: {
-    Project
-  },
-  name: 'Projects',
+    ProjectCard
+},
+  name: 'ProjectSection',
   data: function() {
     return {
       projects: [],

@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Tick',
+  name: 'MpTick',
   props: ['tick', 'route'],
   computed: {
     routeArea: function () {

@@ -12,21 +12,21 @@
           Resume
       </a>
     </div>
-    <Projects/>
-    <TickList/>
+    <ProjectSection/>
+    <MpTickList/>
   </div>
 </template>
 
 <script>
-import Projects from './components/Projects.vue'
-import TickList from './components/TickList.vue'
+import ProjectSection from './components/ProjectSection.vue'
+import MpTickList from './components/MpTickList.vue'
 
 export default {
   name: 'App',
   components: {
-    Projects,
-    TickList
-  },
+    ProjectSection,
+    MpTickList
+},
   data () {
   return {
     publicPath: process.env.BASE_URL

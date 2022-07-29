@@ -13,7 +13,7 @@
       </a>
     </h4>
     <ul>
-      <Tick v-for="tick in ticks"
+      <MpTick v-for="tick in ticks"
         :key="tick.id"
         :tick="tick"
         :route="routeData[tick.routeId]"/>
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import Tick from './Tick.vue'
+import MpTick from './MpTick.vue'
 
 export default {
   components: {
-    Tick
-  },
+    MpTick
+},
   name: 'TickList',
   data: function() {
     return {
